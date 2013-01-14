@@ -13,7 +13,7 @@ begin
   transport.open
 
   puts client.execute("dump", "").inspect
-  puts client.execute("pathRequests", "").inspect
+  puts client.execute("path-requests", "").inspect
   puts client.execute("user-agents", "").inspect
   puts client.execute("filtered-user-agents", "Chrome").inspect
 

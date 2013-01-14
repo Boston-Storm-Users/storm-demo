@@ -48,7 +48,7 @@ public class TridentDemo implements Topology {
     /*
     DRPC stream that returns count of requests for each path
      */
-    tridentTopology.newDRPCStream("pathRequests")
+    tridentTopology.newDRPCStream("path-requests")
         .stateQuery(httpRequestState, new Fields("args"), new TupleCollectionGet(), stateFields)
         .groupBy(new Fields("uri"))
         .aggregate(new Fields("count"), new Sum(), new Fields("pathSum"))

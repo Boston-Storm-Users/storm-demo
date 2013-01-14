@@ -21,7 +21,7 @@ try:
     transport.open()
 
     print client.execute("dump", "")
-    print client.execute("pathRequests", "")
+    print client.execute("path-requests", "")
     print client.execute("user-agents", "")
     print client.execute("filtered-user-agents", "Chrome")
 

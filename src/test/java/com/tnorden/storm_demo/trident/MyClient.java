@@ -14,7 +14,7 @@ public class MyClient {
   public static void main(String[] args) throws TException, DRPCExecutionException {
     DRPCClient drpcClient = new DRPCClient("localhost", 3772);
     System.out.println(drpcClient.execute("dump", ""));
-    System.out.println(drpcClient.execute("pathRequests", ""));
+    System.out.println(drpcClient.execute("path-requests", ""));
     System.out.println(drpcClient.execute("user-agents", ""));
     System.out.println(drpcClient.execute("filtered-user-agents", "Chrome"));
   }
